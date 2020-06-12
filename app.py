@@ -26,7 +26,7 @@ app.config['SECRET_KEY'] = 'anirudhalderson'
 
 db_path = os.path.join(os.path.dirname(__file__), 'database.db')
 db_uri = 'sqlite:///{}'.format(db_path)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://ajuvrcawsmgtid:57a496cfe6ac1eab574f2bfe2bb9d1998d2b0bb5eec867c9e171fec2ac82797a@ec2-52-44-55-63.compute-1.amazonaws.com:5432/d5bhbtu5r1mqq6'
+app.config['SQLALCHEMY_DATABASE_URI'] = ''
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['WHOOSH_BASE'] = 'search'
 
