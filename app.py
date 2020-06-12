@@ -1,9 +1,6 @@
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
-import requests
-from bs4 import BeautifulSoup
 import os
-from timetable import TimeTable, SubID
 from time import sleep, strftime
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func
