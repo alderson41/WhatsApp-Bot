@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 import os
 from timetable import TimeTable, SubID
-from time import sleep
+from time import sleep, strftime
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import func
 from datetime import datetime
@@ -16,13 +16,11 @@ import random
 import dictionary
 from sqlalchemy import CheckConstraint
 from sqlalchemy.exc import IntegrityError
-import time
-from time import strftime
 
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = 'anirudhalderson'
+app.config['SECRET_KEY'] = ''
 
 db_path = os.path.join(os.path.dirname(__file__), 'database.db')
 db_uri = 'sqlite:///{}'.format(db_path)
